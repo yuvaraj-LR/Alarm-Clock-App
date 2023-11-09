@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock App</title>
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Alarm Clock -->
+  <h1 class="alarm-clk-head">Alarm Clock App</h1>
+
+  <div class="wrapper">
+    <div class="time-display" id="time-display">00 : 00 : 00</div>
+
+    <div class="set-time">
+      <div class="time-inputs">
+        <input class="input" id="inp-hour" type="number" placeholder="hours" min="0" max="23">
+        <span class="seperator">:</span>
+        <input class="input" id="inp-minute" type="number" placeholder="minutes" min="0" max="59">
+      </div>
+
+      <button id="alarm-btn" class="btn">Add Alarm</button>
+      <h2 class="alarm-list">Alarm List</h2>
+      <div class="activeAlarms">
+        <div class="alarm-box">
+          <span class="alarm-head">Timings</span>
+          <span class="alarm-head">On/Off</span>
+          <span class="alarm-head">Delete</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
